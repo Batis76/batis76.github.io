@@ -267,13 +267,39 @@ body {
     font-size: 1.8rem;
 }
 
+
+.spacer{
+    height: 17rem;
+}
+
+#copyright {
+    color: rgba(240, 248, 255, 0.801);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#copyright a {
+    color: rgba(147, 203, 252, 0.801);
+    text-decoration: none;
+}
+
+#copyright a:hover, :visited {
+    color: rgba(147, 203, 252, 0.801);
+}
+
+.hidden{
+    display: none;
+}
+
+/* Instagram */
 #social-media2 {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#social-media2 {
+#social-media2 a{
     color: rgb(38, 38, 49);;
     text-decoration: none;
 }
@@ -289,11 +315,9 @@ body {
 
 #social-media {
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-#social-media {
+#social-media a{
     color: aliceblue;
     text-decoration: none;
 }
@@ -325,32 +349,6 @@ body {
     padding: 1rem;
     background: aliceblue;
     color: black;
-}
-
-.spacer{
-    height: 17rem;
-}
-
-#copyright {
-    color: rgba(240, 248, 255, 0.801);
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-#copyright a {
-    color: rgba(147, 203, 252, 0.801);
-    text-decoration: none;
-}
-
-#copyright a:hover, :visited {
-    color: rgba(147, 203, 252, 0.801);
-}
-
-
-
-.hidden{
-    display: none;
 }
 
 @media (max-width: 768px) {
