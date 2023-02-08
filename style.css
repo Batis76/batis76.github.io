@@ -138,6 +138,7 @@ body {
 
 #projects {
     background-color: rgb(85, 139, 190);
+    padding-bottom: 2.5rem;
 }
 
 .project-boxes {
