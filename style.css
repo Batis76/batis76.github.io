@@ -424,6 +424,8 @@ body {
         position: relative;
         top: 60px;
         background-color: transparent;
+        width: 90%;
+        height: auto;
     }
 
     .navbar-list li {
