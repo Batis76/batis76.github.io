@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+}
+
+.row-fluid {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 51, 68);
+}
+
+#overlay {
+    background-color: rgb(26, 25, 25);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+}
+
+.name-title img {
+    margin: 10px;
+    width: 80px;
+    height: auto;
+    border-radius: 40%;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0;
+    background-color: rgb(209, 228, 123);
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-list li.active a {
+    color: rgb(209, 228, 123);
+    background-color: rgb(51, 51, 68);
+}
+
+.navbar-list li a {
+    display: flex;
+    align-items: center;
+    /* centers items vertically */
+    justify-content: center;
+    /* centers items horizontally */
+    height: 100%;
+    text-decoration: none;
+    padding: 1rem;
+    color: rgb(51, 51, 68);
+    font-family: 'Anton', sans-serif;
+}
+
+.navbar-list li:hover a {
+    background-color: rgba(51, 51, 68, 0.788);
+    color: rgb(209, 228, 123);
+    transition: 0.7s;
+}
+
+.h1-header {
+    font-family: 'Anton', sans-serif;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#intro {
+    margin: 30px 0;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 223);
+    width: 100%;
+    padding: 3%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 2px 2px 10px rgb(231, 231, 223);
+}
+
+.int-img1 {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.divider {
+    width: 4%;
+}
+
+.int-img2 {
+    display: none;
+    width: 48%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.text-container {
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    color: rgb(38, 38, 49);
+    background-color: rgb(209, 228, 123);
+    padding: 3%;
+    text-align: justify;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 2px 2px 10px rgb(231, 231, 223);
+    text-align: center;
+}
+
+#projects {
+    background-color: rgb(85, 139, 190);
+}
+
+.project-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 223);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 4px 4px 10px rgba(231, 231, 223, 0.384);
+    border-radius: 15px;
+}
+
+.proj-imgs {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev:hover {
+    cursor: pointer;
+}
+
+.carousel-control-next:hover {
+    cursor: pointer;
+}
+
+.proj-text {
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    color: rgb(38, 38, 49);
+    background-color: rgb(231, 231, 223);
+    padding: 1.4rem;
+}
+
+
+#view-more-button{
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(231, 231, 223);
+    text-shadow: 0 0 1px aliceblue;
+    font-size: 1.5rem;
+    border: none;
+}
+
+#view-less-button{
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(231, 231, 223);
+    text-shadow: 0 0 1px aliceblue;
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+
+
+#contact form {
+    text-align: left;
+    color: rgb(231, 231, 223);
+    width: 100%;
+    height: 100%;
+}
+
+#contact form label {
+    color: aliceblue;
+    margin-left: 15px;
+    font-family: 'Anton', sans-serif;
+}
+
+.form-input-boxes {
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    width: 100%;
+    height: 35px;
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    color: rgb(38, 38, 49);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.158);
+}
+
+#message {
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    width: 100%;
+    height: 90px;
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+    padding: 15px;
+    color: rgb(38, 38, 49);
+    resize: none;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.158);
+}
+
+#submit-btn {
+    font-family: 'Anton', sans-serif;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: transparent;
+    color: aliceblue;
+    padding: 5px 20px;
+    font-size: 15px;
+    border: 3px solid aliceblue;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: rgb(231, 231, 223);
+    color: rgb(38, 38, 49);
+}
+
+.contact-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.8rem;
+}
+
+#social-media2 {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#social-media2 {
+    color: rgb(38, 38, 49);;
+    text-decoration: none;
+}
+
+#social-media2 a:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#social-media2 a:visited {
+    color: rgb(38, 38, 49);;
+}
+
+#social-media {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#social-media {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#social-media a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#social-media a:visited {
+    color: aliceblue;
+}
+
+.fa {
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.insta{
+    padding: 0.5rem;
+    border: 2px solid rgb(38, 38, 49);;
+}
+
+.insta2 {
+    padding: 1rem;
+    background: aliceblue;
+    color: black;
+}
+
+.spacer{
+    height: 17rem;
+}
+
+#copyright {
+    color: rgba(240, 248, 255, 0.801);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#copyright a {
+    color: rgba(147, 203, 252, 0.801);
+    text-decoration: none;
+}
+
+#copyright a:hover, :visited {
+    color: rgba(147, 203, 252, 0.801);
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .name-title img {
+        width: 65px;
+    }
+
+    .hamburger-menu {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 0.12rem;
+        right: 0.5rem;
+        cursor: pointer;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .ham-bar {
+        width: 70%;
+        height: 4px;
+        background-color: rgba(30, 47, 54, 255);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform .6s, opacity .3s, top .6s;
+    }
+
+    .bar-top {
+        top: 25%;
+    }
+
+    .bar-bottom {
+        top: 75%;
+    }
+
+    .hamburger-menu.active .bar-top {
+        transform: translate(-50%, -50%) rotate(-315deg);
+        top: 50%;
+    }
+
+    .hamburger-menu.active .bar-mid {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar-bottom {
+        transform: translate(-50%, -50%) rotate(-225deg);
+        top: 50%;
+    }
+
+    .hidder {
+        width: 10%;
+    }
+
+    .offscreen-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgba(179, 189, 194, 0.514);
+        height: 100%;
+        width: 40%;
+        transition: right .8s;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 60px;
+        background-color: transparent;
+    }
+
+    .navbar-list li {
+        margin: 0.5rem;
+        background-color: rgb(209, 228, 123);
+    }
+
+    
+    .offscreen-menu.active {
+        right: 0;
+    }
+
+
+    .navbar-list li.active {
+        border: 3px solid rgb(209, 228, 123);
+        background-color: rgb(38, 38, 49);
+    }
+}
+
+/* CEll PHONES */
+@media only screen and (max-width: 576px) {
+    .offscreen-menu {
+        right: -100%;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {}
+
+
+@media only screen and (min-width: 992px){
+    .text-container, .proj-text, #contact form label{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .int-img1 {
+        width: 48%;
+    }
+
+    .int-img2 {
+        display: block;
+    }
+
+}
